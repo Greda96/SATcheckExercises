@@ -389,7 +389,7 @@ public class TeXgenerator {
 		SATsolver.copyFormula();
 		 
 		
-		//Creates a "deep" copy of clauseList (the input formula) (BUT which gets modified in the conflictAnalysis, this is a PROBLEM!!!)  (!!!!!)
+		//Creates a "deep" copy of clauseList (the input formula) 
 		SATsolver.deepCopyFormula(SATsolver.clauseList);
 		
 		
@@ -411,7 +411,7 @@ public class TeXgenerator {
 		
 		
 		
-		//Replace format specifier in latexTemplate by Exercise number, the formula and the trail
+		//Replace format specifier in latexTemplate by Exercise number, the formula, the trail and the label ("c_i") of the conflicting clause 
 		String exercise = String.format(exerciselatexTemplate,i, generateLatex(holdIntFormula), SATsolver.trailAsString, SATsolver.cnfClauseForTask);
 	    byte data[] = exercise.getBytes();
 	    Path p = Paths.get("./Exercise" + i + ".tex");
@@ -423,7 +423,7 @@ public class TeXgenerator {
 	    	}
 		i++;
 		
-		//Replace format specifier in latexTemplate by Exercise number, the formula, the trail, and solution of resolution
+		//Replace format specifier in latexTemplate by Exercise number, the formula, the trail, the label ("c_i") of the conflicting clause, the formula, the trail, number of clauses contained in solution of resolution, clauses contained in solution of resolution
 		String solution = String.format(solutionLatexTemplate,j, generateLatex(holdIntFormula), SATsolver.trailAsString, SATsolver.cnfClauseForTask,SATsolver.resolutionSolutionList.size() ,generateLatexResolventsList(getList(SATsolver.resolutionSolutionList.toString())));
 		byte dataSol [] = solution.getBytes();
 		Path sol = Paths.get("./Solution" + j + ".tex");
