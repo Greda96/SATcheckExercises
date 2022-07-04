@@ -2,18 +2,18 @@
 
 An Exercise generator that creates exercises, delivered as PDF file, to practice conflict resolution within DPLL+CDCL SAT solving. 
 
-Technical details
+## Technical details
 
 The exercise generator was written entirely in the Java programming language. The Java version used during time of implementation is Java 17.
 
 
-How to generate exercises? 
+## How to generate exercises? 
 
 First download the Conflict Resolution Folder, in which you find the following documents:
 
-SATsolver.java
-TeXgenerator.java
-ConflictDictionary.txt
+- SATsolver.java
+- TeXgenerator.java
+- ConflictDictionary.txt
 
 If you choose not to download the Conflict Resolution folder but store the individual files to another location, then note that all 3 files need to be stored in the same project folder, in order for the exercise generator to work!
 
