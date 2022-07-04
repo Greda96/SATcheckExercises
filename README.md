@@ -13,7 +13,7 @@ First download the Conflict Resolution Folder, in which you find the following d
 
 - SATsolver.java
 - TeXgenerator.java
-- ConflictDictionary.txt
+- ConflictFormulaDictionary.txt
 
 If you choose not to download the Conflict Resolution folder but store the individual files to another location, then note that all 3 files need to be stored in the same project folder, in order for the exercise generator to work!
 
