@@ -1,6 +1,6 @@
 # SATcheckExercises
 
-An Exercise generator that creates exercises, delivered as PDF file, to practice conflict resolution within DPLL+CDCL SAT solving. 
+An exercise generator that creates exercises to practice conflict resolution within DPLL+CDCL SAT solving. 
 
 ## Technical details
 
